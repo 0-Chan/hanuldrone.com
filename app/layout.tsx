@@ -23,7 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const channelTalkPluginKey =
-    process.env.NEXT_PUBLIC_CHANNEL_TALK_PLUGIN_KEY || '';
+    process.env.NEXT_PUBLIC_CHANNEL_TALK_PLUGIN_KEY ||
+    '0dcac1d4-a5a9-4b56-83e3-ea4fec658a5d';
 
   return (
     <html lang="en">

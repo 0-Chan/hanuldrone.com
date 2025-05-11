@@ -14,7 +14,7 @@ export const ScrollWrapper = forwardRef<HTMLElement, ScrollWrapperProps>(
         ref={ref}
         id={id}
         className={cn(
-          'relative flex h-screen snap-start snap-always items-center justify-center',
+          'relative flex h-5/6 snap-start snap-always items-center justify-center',
           className,
         )}
       >

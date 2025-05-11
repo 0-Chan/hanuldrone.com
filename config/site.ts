@@ -19,27 +19,26 @@ export const siteConfig = {
   ],
   landingPage: {
     solutionsInfo: [
-      // ⚠ 3개 이상 작성 시 PC 레이아웃 깨짐!
       {
         imgSrc: '/image/solution0.jpg',
         imgText: '시설물 안전 점검',
-        title: '결함 탐지 드론',
+        title: '물류 배송 드론',
         description:
-          'AI 영상 처리를 통한 손상 및 결함을 탐지합니다. GPS 단절 환경에서도 무사히 임무를 완수합니다.',
+          '도서 산간 지역 배송, 긴급 의약품 배송, 라스트마일 배송 등 다양한 물류 분야에 최적화된 드론 솔루션',
       },
       {
         imgSrc: '/image/solution1.jpg',
         imgText: '의약품 배송',
-        title: '화물 배송 드론',
+        title: '군용 드론',
         description:
-          '화물 보호 기능을 갖춘 배송함을 탑재하여 다양한 화물을 배송합니다.',
+          '정찰, 감시, 통신 중계, 전술 작전 지원 등 국방 분야의 다양한 임무에 맞게 설계된 고성능 드론 솔루션',
       },
       {
         imgSrc: '/image/solution3.jpg',
         imgText: '화재 감시 및 진압',
-        title: ' eVTOL 소방 드론',
+        title: '맞춤형 드론 솔루션',
         description:
-          '드론 기반 광범위 화재를 감시하며 소화탄 투하하여 초동 진압에 나섭니다.',
+          '다양한 산업 분야에 맞춘 특화된 드론 솔루션으로 고객의 요구사항을 충족한 솔루션 제공',
       },
     ],
     vision: [
