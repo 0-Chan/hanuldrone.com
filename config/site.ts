@@ -4,17 +4,57 @@ export const siteConfig = {
     {
       title: '메인',
       href: '/',
-      items: [],
+      submenus: [
+        {
+          title: '회사 소개',
+          description: '한울드론의 미션과 가치',
+          href: '/about',
+        },
+        {
+          title: '비전',
+          description: '한울드론이 추구하는 미래',
+          href: '/vision',
+        },
+        {
+          title: '연혁',
+          description: '한울드론의 성장 스토리',
+          href: '/history',
+        },
+      ],
     },
     {
       title: '솔루션',
       href: '/solutions',
-      items: [],
+      submenus: [
+        {
+          title: '물류 배송 드론',
+          description:
+            '도서 산간 지역 배송, 긴급 의약품 배송, 라스트마일 배송 등 다양한 물류 분야에 최적화된 드론 솔루션',
+          href: '/solutions/logistics',
+        },
+        {
+          title: '군용 드론',
+          description:
+            '정찰, 감시, 통신 중계, 전술 작전 지원 등 국방 분야의 다양한 임무에 맞게 설계된 고성능 드론 솔루션',
+          href: '/solutions/military',
+        },
+      ],
     },
     {
-      title: '소식',
-      href: '/blog',
-      items: [],
+      title: '리소스',
+      href: '/resources',
+      submenus: [
+        {
+          title: '문서',
+          description: '한울드론의 기술 문서와 가이드',
+          href: '/resources/docs',
+        },
+        {
+          title: '블로그',
+          description: '드론 산업의 최신 트렌드와 한울드론의 소식',
+          href: '/resources/blog',
+        },
+      ],
     },
   ],
   landingPage: {
