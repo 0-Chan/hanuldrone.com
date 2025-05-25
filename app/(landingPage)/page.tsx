@@ -98,62 +98,14 @@ export default function Home() {
         ))}
       </div>
 
-      <ScrollWrapper ref={ref} className="items-start" id="hero">
+      <ScrollWrapper ref={ref} className="h-full" id="hero">
         <div className="w-full">
-          <div className="bg-gradient-to-b from-blue-500 to-blue-700 py-36 opacity-80 md:py-52">
+          <div className="relative bg-gradient-to-b from-blue-500 to-blue-700 py-36 md:py-52">
             <div className="absolute inset-0 z-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                className="text-blue-100"
-              >
-                <defs>
-                  <pattern
-                    id="grid"
-                    width="40"
-                    height="40"
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path
-                      d="M 40 0 L 0 0 0 40"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="0.5"
-                    />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-              </svg>
-            </div>
-            <div className="container relative z-10 px-4 md:px-6">
-              <div className="mx-auto max-w-3xl text-center">
-                <h1 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
-                  혁신적인 드론 솔루션
-                </h1>
-                <p className="text-md mb-8 text-blue-100 md:text-lg">
-                  <span className="block">
-                    최첨단 드론 기술로 산업의 미래를 선도합니다.
-                  </span>
-                  <span className="block">
-                    한울드론의 솔루션으로 새로운 가능성을 경험하세요.
-                  </span>
-                </p>
-                <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                  <Button
-                    variant="outline"
-                    className="w-32 rounded-xl border-blue-700 bg-white text-blue-700 hover:border-white hover:bg-blue-800 hover:text-white sm:w-auto"
-                  >
-                    <Link href="/contact">회사 소개</Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-32 rounded-xl border-blue-700 text-blue-700 hover:border-white hover:bg-blue-800 hover:text-white sm:w-auto"
-                  >
-                    <Link href="/main/company">문의하기</Link>
-                  </Button>
-                </div>
-              </div>
+              <VideoPlayer
+                src="/video/CES_HanulDrone_homepage_muted.mp4"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
 
