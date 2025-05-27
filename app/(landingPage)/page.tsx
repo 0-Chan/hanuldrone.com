@@ -120,11 +120,11 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2
               id="solutions"
-              className="mb-4 text-3xl font-bold tracking-tight text-blue-950"
+              className="mb-4 text-xl font-bold tracking-tight text-blue-950 sm:text-3xl"
             >
               핵심 서비스
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-700">
+            <p className="mx-auto max-w-2xl text-sm text-gray-700 sm:text-lg">
               <span className="block">
                 한울드론은 첨단 기술과 혁신적인 솔루션으로
               </span>
@@ -133,7 +133,7 @@ export default function Home() {
               </span>
             </p>
           </div>
-          <div className={cn('grid gap-8 md:grid-cols-3')}>
+          <div className={cn('grid gap-4 md:grid-cols-3')}>
             {siteConfig.landingPage.solutionsInfo.map((solution, index) => {
               return (
                 <div
@@ -242,9 +242,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              {/* <Button className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/main/company">더 알아보기</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function Home() {
               한울드론이 추구하는 가치와 목표를 소개합니다.
             </p>
           </div>
-          <div className="grid gap-12 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             {/* 비전 */}
             <div className="rounded-lg border border-blue-100 bg-white p-8 shadow-sm">
               <div className="mb-6 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 py-2 text-center">
@@ -340,11 +340,7 @@ export default function Home() {
         </div>
       </ScrollWrapper>
 
-      <ScrollWrapper
-        ref={ref}
-        id="history"
-        className="bg-gray-50 py-16 md:py-24"
-      >
+      <ScrollWrapper ref={ref} id="history" className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="mb-12 text-center">
             <h2
@@ -354,19 +350,29 @@ export default function Home() {
               주요 연혁
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-blue-700">
-              (주)한울드론의 성장 과정과 주요 이정표를 소개합니다.
+              한울드론의 성장 과정과 주요 이정표를 소개합니다.
             </p>
           </div>
           <div className="mx-auto max-w-4xl">
             <div className="relative">
-              <div className="absolute bottom-0 left-16 top-0 w-1 bg-blue-200"></div>
+              {/* 연도 우측 bar */}
+              <div className="absolute bottom-0 left-[62px] top-0 w-1 bg-blue-200"></div>
+              <div className="absolute bottom-0 right-10 top-0 hidden w-[300px] overflow-hidden rounded-lg bg-blue-200 lg:block">
+                {/* 서산 이미지 추가 */}
+                <Image
+                  src="/image/seosan-project1.jpg"
+                  alt="서산시 드론 실증 사업 관련 이미지"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
 
               {/* 2022년 */}
-              <div className="relative mb-8 pl-24">
+              <div className="relative mb-8 pl-20">
                 <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
                   2022
                 </div>
-                <div className="rounded-lg border border-blue-100 bg-white p-6 shadow-sm">
+                <div className="w-fit rounded-lg border border-blue-100 bg-white px-4 py-6 text-xs shadow-sm md:text-base">
                   <p className="font-medium text-red-500">
                     • (주) 한울드론 법인 설립
                   </p>
@@ -374,11 +380,11 @@ export default function Home() {
               </div>
 
               {/* 2023년 */}
-              <div className="relative mb-8 pl-24">
+              <div className="relative mb-8 pl-20">
                 <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
                   2023
                 </div>
-                <div className="rounded-lg border border-blue-100 bg-white p-6 shadow-sm">
+                <div className="w-fit rounded-lg border border-blue-100 bg-white px-4 py-6 text-xs shadow-sm md:text-base">
                   <p className="mb-2 text-blue-700">
                     • 청년창업사관학교 기업 선정 (중소벤처기업부 주관)
                   </p>
@@ -393,11 +399,11 @@ export default function Home() {
               </div>
 
               {/* 2024년 */}
-              <div className="relative mb-8 pl-24">
+              <div className="relative mb-8 pl-20">
                 <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
                   2024
                 </div>
-                <div className="rounded-lg border border-blue-100 bg-white p-6 shadow-sm">
+                <div className="w-fit rounded-lg border border-blue-100 bg-white p-2 text-xs shadow-sm sm:p-4 md:text-base">
                   <p className="mb-2 text-blue-700">
                     • 드론 실증도시 구축사업 물품 배송 분야 사업자 선정
                   </p>
@@ -414,11 +420,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 text-center">
+            {/* <div className="mt-8 text-center">
               <Button className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/main/history">연혁 자세히 보기</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </ScrollWrapper>
