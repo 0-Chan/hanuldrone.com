@@ -8,17 +8,17 @@ export const siteConfig = {
         {
           title: '회사 소개',
           description: '한울드론의 미션과 가치',
-          href: '/about',
+          href: '/#company',
         },
         {
           title: '비전',
           description: '한울드론이 추구하는 미래',
-          href: '/vision',
+          href: '/#vision',
         },
         {
           title: '연혁',
           description: '한울드론의 성장 스토리',
-          href: '/history',
+          href: '/#history',
         },
       ],
     },

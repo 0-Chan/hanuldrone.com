@@ -118,7 +118,10 @@ export default function Home() {
       <ScrollWrapper ref={ref} id="solutions" className="bg-gray-50 py-20">
         <div className="relative mx-10 h-[43%] lg:h-3/4 lg:w-3/4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950">
+            <h2
+              id="solutions"
+              className="mb-4 text-3xl font-bold tracking-tight text-blue-950"
+            >
               핵심 서비스
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-700">
@@ -171,7 +174,10 @@ export default function Home() {
         <div className="container mx-10 px-4 md:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-bold tracking-tight text-blue-950">
+              <h2
+                id="company"
+                className="mb-6 text-3xl font-bold tracking-tight text-blue-950"
+              >
                 회사 소개
               </h2>
               <p className="mb-6 text-lg text-blue-900">
@@ -240,12 +246,6 @@ export default function Home() {
                 <Link href="/main/company">더 알아보기</Link>
               </Button>
             </div>
-            <div className="aspect-video overflow-hidden rounded-lg bg-blue-100">
-              <VideoPlayer
-                src="/video/CES_HanulDrone_homepage_muted.mp4"
-                className="h-full w-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </ScrollWrapper>
@@ -253,7 +253,10 @@ export default function Home() {
       <ScrollWrapper id="vision" className="bg-gray-50 py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950">
+            <h2
+              id="vision"
+              className="mb-4 text-3xl font-bold tracking-tight text-blue-950"
+            >
               비전 및 미션
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-blue-700">
@@ -344,7 +347,10 @@ export default function Home() {
       >
         <div className="container px-4 md:px-6">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950">
+            <h2
+              id="history"
+              className="mb-4 text-3xl font-bold tracking-tight text-blue-950"
+            >
               주요 연혁
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-blue-700">
@@ -506,7 +512,10 @@ export default function Home() {
       <div className="snap-end" id="partners">
         <div className="mx-auto my-8 text-center lg:w-3/4">
           <div className="mt-36 text-center lg:mt-32">
-            <span className="text-lg font-semibold tracking-wider text-stone-600 dark:text-white">
+            <span
+              id="partners"
+              className="text-lg font-semibold tracking-wider text-stone-600 dark:text-white"
+            >
               PARTNERS
             </span>
             <div className="slider">
