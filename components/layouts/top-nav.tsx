@@ -15,12 +15,24 @@ import {
 
 import { cn } from '@/lib/utils';
 
-export function TopNav({ mainMenus }: any) {
+interface Submenu {
+  title: string;
+  href: string;
+  description: string;
+}
+
+interface MainMenu {
+  title: string;
+  href: string;
+  submenus?: Submenu[];
+}
+
+export function TopNav({ mainMenus }: { mainMenus: MainMenu[] }) {
   return (
     <div className={cn('hidden gap-6', 'md:flex')}>
       <NavigationMenu>
         <NavigationMenuList>
-          {mainMenus.map((mainMenu: any) =>
+          {mainMenus.map((mainMenu: MainMenu) =>
             mainMenu.submenus ? (
               <NavigationMenuItem key={mainMenu.title}>
                 <NavigationMenuTrigger className="h-auto capitalize">
@@ -33,7 +45,7 @@ export function TopNav({ mainMenus }: any) {
                       'md:w-[350px] md:grid-cols-2 lg:w-[450px]',
                     )}
                   >
-                    {mainMenu.submenus.map((submenu: any) => (
+                    {mainMenu.submenus.map((submenu: Submenu) => (
                       <SubmenuItem
                         key={submenu.title}
                         title={submenu.title}
