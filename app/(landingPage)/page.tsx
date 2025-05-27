@@ -100,7 +100,7 @@ export default function Home() {
 
       <ScrollWrapper ref={ref} className="h-full" id="hero">
         <div className="w-full">
-          <div className="relative bg-gradient-to-b from-blue-500 to-blue-700 py-36 md:py-52">
+          <div className="relative w-full bg-gradient-to-b from-blue-500 to-blue-700 pb-[56.25%]">
             <div className="absolute inset-0 z-0">
               <VideoPlayer
                 src="/video/CES_HanulDrone_homepage_muted.mp4"
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
 
           <div className="relative flex justify-center">
-            <ArrowDownIcon className="size-8 absolute -top-14 left-1/2 -translate-x-1/2 animate-bounce text-white" />
+            <ArrowDownIcon className="size-8 absolute -top-10 left-1/2 -translate-x-1/3 animate-bounce text-white md:-top-20" />
           </div>
         </div>
       </ScrollWrapper>
