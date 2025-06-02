@@ -357,15 +357,6 @@ export default function Home() {
             <div className="relative">
               {/* 연도 우측 bar */}
               <div className="absolute bottom-0 left-[62px] top-0 w-1 bg-blue-200"></div>
-              <div className="absolute bottom-0 right-10 top-0 hidden w-[300px] overflow-hidden rounded-lg bg-blue-200 lg:block">
-                {/* 서산 이미지 추가 */}
-                <Image
-                  src="/image/seosan-project1.jpg"
-                  alt="서산시 드론 실증 사업 관련 이미지"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
 
               {/* 2022년 */}
               <div className="relative mb-8 pl-20">
