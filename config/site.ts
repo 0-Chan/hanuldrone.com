@@ -137,22 +137,6 @@ export const siteConfig = {
       },
       { dateTime: '2022-12', label: '한울드론 법인 설립' },
     ],
-    membersInfo: [
-      {
-        imgSrc: '/image/member-ceo.png',
-        name: '엄송근',
-        position: 'Founder & CEO',
-        introduction:
-          '한서대 항공시스템공학 석사 학위를 취득하고, 한울드론을 공동창업 하였습니다. 인공지능 기술을 연구 하였습니다.',
-      },
-      {
-        imgSrc: '/image/member-cto.png',
-        name: '김정훈',
-        position: 'Co-Founder & CTO',
-        introduction:
-          '한서대 항공시스템공학 석사 학위를 취득하고, 한울드론을 공동창업 하였습니다. 편대비행 및 충돌회피 기술을 연구 하였으며 다양한 실증에 참여한 이력이 있습니다.',
-      },
-    ],
   },
   footer: {
     ceo: '엄송근',
