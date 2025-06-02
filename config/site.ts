@@ -30,13 +30,13 @@ export const siteConfig = {
           title: '물류 배송 드론',
           description:
             '도서 산간 지역 배송, 긴급 의약품 배송, 라스트마일 배송 등 다양한 물류 분야에 최적화된 드론 솔루션',
-          href: '/solutions/logistics',
+          href: '/solutions',
         },
         {
           title: '군용 드론',
           description:
             '정찰, 감시, 통신 중계, 전술 작전 지원 등 국방 분야의 다양한 임무에 맞게 설계된 고성능 드론 솔루션',
-          href: '/solutions/military',
+          href: '/solutions',
         },
       ],
     },
