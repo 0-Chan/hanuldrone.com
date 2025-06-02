@@ -402,7 +402,7 @@ export default function Home() {
                   2022
                 </div>
                 <div className="w-fit rounded-lg border border-blue-100 bg-white px-4 py-6 text-xs shadow-sm md:text-base">
-                  <p className="font-medium text-red-500">
+                  <p className="font-bold text-slate-800">
                     • (주) 한울드론 법인 설립
                   </p>
                 </div>
@@ -420,10 +420,10 @@ export default function Home() {
                   <p className="mb-2 text-blue-700">
                     • 드론 실증도시 구축 사업 VTOL 의약품 배송 분야 사업자 선정
                   </p>
-                  <p className="mb-2 font-medium text-red-500">
+                  <p className="mb-2 font-bold text-slate-800">
                     • 기업부설 연구소 등록
                   </p>
-                  <p className="font-medium text-red-500">• 벤처기업 인증</p>
+                  <p className="font-bold text-slate-800">• 벤처기업 인증</p>
                 </div>
               </div>
 
@@ -440,7 +440,7 @@ export default function Home() {
                     • 디지털 물류서비스 실증 사업 VTOL 의약품 배송 분야 사업자
                     선정
                   </p>
-                  <p className="mb-2 font-medium text-red-500">
+                  <p className="mb-2 font-bold text-slate-800">
                     • 연구개발기업 인증
                   </p>
                   <p className="text-blue-700">
