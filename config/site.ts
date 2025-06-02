@@ -30,13 +30,13 @@ export const siteConfig = {
           title: '물류 배송 드론',
           description:
             '도서 산간 지역 배송, 긴급 의약품 배송, 라스트마일 배송 등 다양한 물류 분야에 최적화된 드론 솔루션',
-          href: '/solutions',
+          href: '/solutions#logistics',
         },
         {
           title: '군용 드론',
           description:
             '정찰, 감시, 통신 중계, 전술 작전 지원 등 국방 분야의 다양한 임무에 맞게 설계된 고성능 드론 솔루션',
-          href: '/solutions',
+          href: '/solutions#defense',
         },
       ],
     },
@@ -47,12 +47,12 @@ export const siteConfig = {
         {
           title: '뉴스',
           description: '한울드론의 소식과 최신 기술 정보',
-          href: '/resources/news',
+          href: '/blog',
         },
         {
           title: '블로그',
           description: '드론 산업의 최신 트렌드와 한울드론의 소식',
-          href: '/resources/blog',
+          href: '/blog',
         },
       ],
     },
@@ -61,24 +61,17 @@ export const siteConfig = {
     solutionsInfo: [
       {
         imgSrc: '/image/solution0.jpg',
-        imgText: '시설물 안전 점검',
+        imgText: 'logistics',
         title: '물류 배송 드론',
         description:
           '도서 산간 지역 배송, 긴급 의약품 배송, 라스트마일 배송 등 다양한 물류 분야에 최적화된 드론 솔루션',
       },
       {
         imgSrc: '/image/solution1.jpg',
-        imgText: '의약품 배송',
+        imgText: 'defense',
         title: '군용 드론',
         description:
           '정찰, 감시, 통신 중계, 전술 작전 지원 등 국방 분야의 다양한 임무에 맞게 설계된 고성능 드론 솔루션',
-      },
-      {
-        imgSrc: '/image/solution3.jpg',
-        imgText: '화재 감시 및 진압',
-        title: '맞춤형 드론 솔루션',
-        description:
-          '다양한 산업 분야에 맞춘 특화된 드론 솔루션으로 고객의 요구사항을 충족한 솔루션 제공',
       },
     ],
     vision: [
