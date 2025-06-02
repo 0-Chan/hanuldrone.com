@@ -45,9 +45,9 @@ export const siteConfig = {
       href: '/resources',
       submenus: [
         {
-          title: '문서',
-          description: '한울드론의 기술 문서와 가이드',
-          href: '/resources/docs',
+          title: '뉴스',
+          description: '한울드론의 소식과 최신 기술 정보',
+          href: '/resources/news',
         },
         {
           title: '블로그',
@@ -102,6 +102,29 @@ export const siteConfig = {
         title: '협동과 소통',
         description:
           '가장 큰 임팩트를 낼 수 있는 목표를 향해 자유롭게 소통하며 몰입합니다.',
+      },
+    ],
+    values: [
+      {
+        icon: 'CrownIcon',
+        title: '도전',
+        description:
+          '두려움 없이 어려운 목표에 뛰어들어 미지의 영역을 개척합니다.',
+      },
+      {
+        icon: 'SunriseIcon',
+        title: '혁신',
+        description: '끊임없는 기술 혁신으로 한계를 넘어 갑니다.',
+      },
+      {
+        icon: 'LightbulbIcon',
+        title: '창의',
+        description: '창의적 사고로 남들이 풀지 못한 문제를 해결합니다.',
+      },
+      {
+        icon: 'ShieldUserIcon',
+        title: '책임감',
+        description: '맡은 바 역할과 결과에 끝까지 책임감을 가집니다.',
       },
     ],
     history: [

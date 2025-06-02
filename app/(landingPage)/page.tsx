@@ -3,21 +3,23 @@
 import React from 'react';
 import { useRef, useState, useEffect, useMemo } from 'react';
 
-import { motion } from 'framer-motion';
-
-import Balancer from 'react-wrap-balancer';
 import { ScrollWrapper } from './scrollSections/scroll-wrapper';
 
 import { SiteFooter } from '@/components/layouts/site-footer';
-import { Button } from '@/components/ui/button';
 
 import { cn } from '@/lib/utils';
-import { fadeIn } from '@/lib/motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { siteConfig } from '@/config/site';
-import { ArrowDownIcon, ArrowRight } from 'lucide-react';
+import {
+  ArrowDownIcon,
+  ArrowRight,
+  Crown,
+  Sunrise,
+  Lightbulb,
+  ShieldCheck,
+} from 'lucide-react';
 
 export default function Home() {
   const ref = useRef<HTMLElement>(null);
@@ -338,6 +340,42 @@ export default function Home() {
             </Button>
           </div> */}
         </div>
+      </ScrollWrapper>
+
+      <ScrollWrapper ref={ref} id="values" className="py-16 md:py-24">
+        <section className="container px-4 md:px-6">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950">
+              핵심 가치
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-blue-700">
+              한울드론이 추구하는 핵심 가치를 소개합니다.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {siteConfig.landingPage.values.map((value) => {
+              let IconComponent = Crown; // 기본값
+              if (value.icon === 'SunriseIcon') IconComponent = Sunrise;
+              if (value.icon === 'LightbulbIcon') IconComponent = Lightbulb;
+              if (value.icon === 'ShieldUserIcon') IconComponent = ShieldCheck;
+
+              return (
+                <div
+                  key={value.title}
+                  className="rounded-lg border border-blue-100 bg-white p-6 shadow-sm"
+                >
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                    <IconComponent className="h-6 w-6" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-blue-950">
+                    {value.title}
+                  </h3>
+                  <p className="text-blue-700">{value.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </ScrollWrapper>
 
       <ScrollWrapper ref={ref} id="history" className="py-16 md:py-24">
